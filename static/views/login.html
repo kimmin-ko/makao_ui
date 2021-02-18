@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/styles.css"/>
+    <title>Login / MakaoTalk</title>
+</head>
+<body class="login-body">
+<main class="login-screen">
+    <div class="login-screen__image">
+        <img src="/static/images/logo.png" class="login-screen__image logo"/>
+    </div>
+    <div class="login-screen__main">
+        <input type="text" class="main__name" id="email" name="email" placeholder="마카오 이메일"/>
+        <input type="password" class="main__pass" id="password" name="password" placeholder="비밀번호"
+               autocomplete="off"/>
+        <span id="login-guide"></span>
+        <button class="main_button" id="login-btn" name="login">로그인</button>
+        <span class="login-screen__checkboxArea">
+            <input type="checkbox" name="auto_login" class="checkbox__box" placeholder="">
+            <label class="checkbox__text">
+                실행시 자동 로그인
+            </label>
+        </span>
+    </div>
+</main>
+<nav>
+    <span class="nav__account">
+        <a href="/join">회원가입</a> &verbar;
+        <a href="#">마카오계정 찾기</a> &verbar;
+        <a href="#">비밀번호 찾기</a>
+    </span>
+</nav>
+<div class="bigScreen">
+    <span class="bigScreen__text">Please make your screen small! 😣</span>
+</div>
+<script src="https://kit.fontawesome.com/412dbb4333.js"></script>
+<script type="module" src="/static/js/login.js"></script>
+</body>
+</html>

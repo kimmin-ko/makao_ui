@@ -1,0 +1,198 @@
+.signUp-body {
+    background-color: white;
+}
+
+.makao_head {
+    max-width: 520px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.makao_service_logo {
+    display: inline-block;
+    width: 88px;
+    height: 27px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1;
+    vertical-align: top;
+    font-size: 35px;
+
+}
+
+/* default */
+.item_tf .lab_placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    color: #adadad;
+}
+
+/* click */
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.type_email, .type_name, .type_password, .type_account,
+.type_phone, .type_gender, .birth_list {
+    margin-bottom: 38px;
+}
+
+.tf_required {
+    display: block;
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.lab_g {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #4c4c4c;
+    cursor: pointer;
+}
+
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.item_tf {
+    padding-right: 0;
+}
+
+.item_inp {
+    position: relative;
+}
+
+.item_tf .tf_g[type=password] {
+    letter-spacing: 1px;
+}
+
+.item_tf .tf_g {
+    width: 100%;
+    height: 48px;
+    border-width: 0 0 2px 0;
+    border-color: #ebebeb;
+    padding: 11px 70px 11px 0;
+    color: #252525;
+    outline: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    caret-color: #f7e317;
+}
+
+.util_tf {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    min-width: 55px;
+    text-align: right;
+}
+
+.list_desc {
+    margin-top: 11px;
+    color: #999;
+}
+
+.list_desc {
+    font-size: 12px;
+}
+
+.wrap_inp {
+    box-sizing: border-box;
+}
+
+.wrap_inp:after {
+    display: block;
+    height: 0;
+    content: ".";
+    font-size: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.wrap_inp {
+    box-sizing: border-box;
+}
+
+.wrap_inp .item_inp {
+    display: inline-block;
+    padding-right: 0;
+}
+
+.item_select {
+    padding-right: 0;
+}
+
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/*  생일  */
+.type_birth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+/*  성별  */
+.type_gender {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px 70px 15px 0;
+}
+
+.type_gender input {
+    margin-right: 8px;
+
+}
+
+.type_gender label {
+    margin-right: 90px;
+    font-size: 15px;
+    align-items: center;
+}
+
+/*  버튼  */
+.wrap_btn3 {
+    right: 69px;
+    bottom: 49px;
+    left: 69px;
+}
+
+.wrap_btn .btn_g {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #333;
+    background-color: #f6f6f6;
+}

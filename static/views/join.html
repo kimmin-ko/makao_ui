@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/styles.css"/>
+    <title>Sign Up / MakaoTalk</title>
+</head>
+<body class="signUp-body">
+
+<header class="makao_head" role="banner">
+    <h1 class="makao_service_logo">
+        <span class="ir_wa">makao</span>
+    </h1>
+</header>
+<main class="signUp-main">
+    <form>
+        <div class="signUp-form">
+            <!-- TODO 이메일 인증 -->
+            <strong class="tf_required">* 마카오계정 이메일</strong>
+            <div class="item_inp item_tf type_email">
+                <label class="lab_g lab_txt lab_placeholder" for="email"></label>
+                <input class="tf_g" id="email" name="email" type="text" placeholder="이메일 주소 입력"/>
+                <div class="util_tf">
+                    <input type="button" id="check-email" value="중복 확인"/>
+                </div>
+            </div>
+
+            <strong class="tf_required">* 이름</strong>
+            <div class="item_inp item_tf type_name">
+                <label class="lab_g lab_txt lab_placeholder" for="name"></label>
+                <input class="tf_g" id="name" name="name" type="text" placeholder="이름 입력"/>
+            </div>
+
+            <strong class="tf_required">* 비밀번호</strong>
+            <div class="type_password">
+                <div class="item_inp item_tf">
+                    <label class="lab_g lab_placeholder lab_txt" for="password"></label>
+                    <input class="tf_g" id="password" name="password" type="password" placeholder="비밀번호(8~16자리)" autocomplete="off" maxlength="16"/>
+                </div>
+                <div class="item_inp item_tf">
+                    <label class="lab_g lab_placeholder lab_txt" for="password-confirm"></label>
+                    <input class="tf_g" id="password-confirm" name="passwordConfirm" type="password" placeholder="비밀번호 재입력" autocomplete="off" maxlength="16"/>
+                </div>
+            </div>
+
+            <strong class="tf_required">* 계정</strong>
+            <div class="item_inp item_tf type_account">
+                <label class="lab_g lab_placeholder lab_txt" for="account"></label>
+                <input class="tf_g" id="account" name="account" maxlength="20" type="text" placeholder="계정을 입력해주세요.">
+                <div class="util_tf">
+                    <input type="button" id="check-account" value="중복 확인"/>
+                </div>
+            </div>
+
+            <!-- TODO 문자 인증 -->
+            <strong class="tf_required">핸드폰 번호 (선택)</strong>
+            <div class="item_inp item_tf type_phone">
+                <label for="phoneNumber" class="lab_g lab_placeholder lab_txt"></label>
+                <input data-type="tel" id="phoneNumber" class="tf_g " name="phone_number" type="tel"
+                       placeholder="핸드폰 번호" maxlength="15">
+                <ul class="list_desc">
+                    <li><span class="ico_dot"></span>예)010-1234-5678</li>
+                </ul>
+            </div>
+
+            <strong class="tf_required">생일 (선택)</strong>
+            <div class="type_birth">
+                <div class="item_inp item_tf type_birth">
+                    <label for="birthDate" class="lab_g lab_placeholder lab_txt"></label>
+                    <input id="birthDate" class="tf_g" name="year" type="text" placeholder="생년월일" maxlength="10"/>
+                </div>
+            </div>
+            <ul class="list_desc birth_list">
+                <li><span class="ico_dot"></span>예)1992-01-01</li>
+            </ul>
+
+            <div class="wrap_btn wrap_btn3">
+                <button class="btn_g" id="join-btn" type="button">회원가입 완료</button>
+            </div>
+        </div>
+    </form>
+</main>
+
+<div class="bigScreen">
+    <span class="bigScreen__text">Please make your screen small! 😣</span>
+</div>
+
+</body>
+<script src="https://kit.fontawesome.com/412dbb4333.js"></script>
+<script type="module" src="/static/js/sign_up.js"></script>
+</html>
